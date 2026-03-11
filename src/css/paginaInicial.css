@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'roboto', sans-serif;
+}
+
+
+:root {
+  --azul : #0077B6;
+  --cinzaMedio: #D9D9D9;
+  --cinzaClaro : #F4F4F4;
+  --cinzaEscuro : #676767;
+  --black : #000;
+}
+
+body {
+  background: var(--cinzaClaro);
+}
+
+.cadastroServicos {
+  background: var(--azul);
+  color: white;
+  height: 80px;
+}
+.cadastroServicos h1 {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  margin-left: 40px;
+  
+} 
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.container-menu {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  background: var(--cinzaMedio);
+  width: 1850px;
+  height: 162px;
+  border-radius: 10px;
+  border: 0.5px solid var(--cinzaEscuro);
+  
+}
+
+.criarNota {
+  display: flex;
+  flex-direction: column;
+  margin-left: 97px;
+  width: 120px;
+}
+
+.criarNota img {
+   height: 60px;
+  width: 77px;
+  
+}
+
+
+.criarNota p {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.criarNota button {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: trasnform 500ms ease;
+}
+
+.criarNota button:hover {
+  transform: scale(1.05);
+}
+
+.pesquisarNota {
+  display: flex;
+  flex-direction: column;
+  margin-left: 97px;
+  width: 120px;
+}
+
+.pesquisarNota p {
+  text-align: center;
+  margin-top: 16px;
+  position: relative;
+  bottom: 5px;
+}
+
+.pesquisarNota button {
+  display: flex;
+  flex-direction: column;
+  border: none;
+   background: none;
+   cursor: pointer;
+   transition: trasnform 500ms ease;
+}
+.pesquisarNota button:hover {
+  transform: scale(1.05);
+}
+
+
+.container-nota {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.container-atributos {
+  display: grid;
+  grid-template-columns: repeat(8, 231px);
+ text-align: center;
+ align-items: center;
+  background: var(--cinzaMedio);
+  height: 76px;
+  width: 1850px;
+  border: 0.5px solid var(--cinzaEscuro);
+  font-size: 24px;
+  border-bottom: none;
+}
+
+.nota {
+  display: grid;
+  grid-template-columns: repeat(8, 231px);
+  text-align: center;
+  align-items: center;
+  grid-template-columns: repeat(8, 231px);
+  height: 215px;
+  border: 0.5px solid var(--cinzaEscuro);
+  border-top: none;
+}
+
+.btn-nota {
+  display: flex;
+  width: 1850px;
+  gap: 50px;
+  justify-content: center;
+}
+
+.btn-nota button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: trasnform 500ms ease;
+}
+.btn-nota button:hover {
+  transform: scale(1.05);
+}
