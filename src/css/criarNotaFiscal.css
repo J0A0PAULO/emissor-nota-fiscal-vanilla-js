@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'roboto', sans-serif;
+}
+
+
+:root {
+  --azul : #0077B6;
+  --cinzaMedio: #D9D9D9;
+  --cinzaClaro : #F4F4F4;
+  --cinzaEscuro : #676767;
+  --black : #000;
+}
+
+body {
+  background: var(--cinzaClaro);
+}
+
+
+.container-header  {
+  display: flex;
+  align-items: center;
+  width: 1920px;
+  height: 80px;
+  background: var(--azul);
+  color: #fff;
+}
+
+.container-header h1 {
+  margin-left: 40px;
+}
+
+.container-criar-Nota {
+  display: flex;
+  justify-content: center;
+  width: 1920px;
+  max-height: auto;
+}
+
+.container-formulario {
+  display: flex;
+  box-shadow: 0.5px 0.5px 3px 0.5px #ccc;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  width: 500px;
+  height: 700px;
+  margin: 80px 0 ;
+}
+.criar-nota {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.criar-nota-h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.criar-nota input[type="text"] {
+  width: 320px;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  border: 0.5px solid var(--cinzaEscuro);
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+.criar-nota button {
+  width: 122px;
+  margin: 0 auto;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+  background: var(--azul);
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 500ms ease;
+}
+
+.criar-nota button:hover {
+  background: #005a8a;
+}
