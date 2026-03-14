@@ -1,4 +1,4 @@
-const exibirNota = document.querySelector('.exibirNota')
+const exibirNota = document.querySelector('.exibirNota');
 
 document.addEventListener('click', (e) => {
   const el = e.target;
