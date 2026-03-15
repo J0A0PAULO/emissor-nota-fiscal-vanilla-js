@@ -32,5 +32,13 @@ document.addEventListener('click', (e) => {
   }
 });
 
+document.addEventListener('click', (e) => {
+  const el = e.target;
+  if (el.closest('.btn-pesquisar')) {
+    location.href = './filtroNotas.html'
+  }
+});
+
+
 
 exibirDadosSalvos(exibirNota);
